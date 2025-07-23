@@ -1,8 +1,18 @@
-<html>
-  <head>
-    <title>nico25m</title>
-  </head>
-  <body>
-    <h1>CIAOOOO</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il mio portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 40px; }
+    h1 { color: #333; }
+    a { color: blue; }
+  </style>
+</head>
+<body>
+  <h1>Ciao, sono Mario!</h1>
+  <p>Benvenuto nel mio portfolio.</p>
+  <p><a href="https://github.com/mario123">Il mio GitHub</a></p>
+</body>
 </html>
