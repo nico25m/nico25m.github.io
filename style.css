@@ -1,4 +1,4 @@
-/* === STILI BASE === */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -18,7 +18,7 @@ body {
   animation-delay: 0.3s;
 }
 
-/* === HEADER === */
+
 header {
   background: linear-gradient(45deg, #ff0000, #990000);
   color: white;
@@ -89,7 +89,7 @@ footer {
   color: #ccc;
 }
 
-/* === LOADER ROTELLA ROSSO/BIANCO === */
+
 .spinner-loader {
   position: fixed;
   inset: 0;
@@ -109,7 +109,7 @@ footer {
   animation: spin 1s linear infinite;
 }
 
-/* === ANIMAZIONI === */
+
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
