@@ -3,53 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>nico25m – Web Developer</title>
+  <title>nico25m Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="logo">nico25m</div>
-    <nav id="nav">
-      <ul>
-        <li><a href="#about">Chi sono</a></li>
-        <li><a href="#progetti">Progetti</a></li>
-      </ul>
-    </nav>
-    <div id="menu-toggle">&#9776;</div>
+    <div class="container">
+      <h1>Ciao, sono <span class="highlight">nico25m</span></h1>
+      <p>Sviluppatore Web Junior</p>
+      <nav>
+        <ul>
+          <li><a href="#about">Chi sono</a></li>
+          <li><a href="#progetti">Progetti</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <video autoplay muted loop playsinline id="bg-video">
-      <source src="https://youtu.be/hFZFjoX2cGg?si=dVuaNs1WtXf2tSiK" type="video/mp4" />
-      Il tuo browser non supporta il video.
-    </video>
-    <div class="overlay">
-      <h1>Ciao, sono <span>nico25m</span></h1>
-      <p>Sviluppatore Web Junior</p>
-      <a href="#progetti" class="btn">I miei progetti</a>
-    </div>
-  </section>
-
-  <section class="section about" id="about" data-parallax>
+  <section id="about">
     <h2>Chi sono</h2>
-    <p>Sono uno sviluppatore appassionato di HTML, CSS, JavaScript e React.</p>
+    <p>
+      Sono uno sviluppatore web junior appassionato di HTML, CSS e JavaScript.
+      Sto anche imparando React per creare siti web moderni e interattivi.
+    </p>
   </section>
 
-  <section class="section projects" id="progetti" data-parallax>
+  <section id="progetti">
     <h2>I miei progetti</h2>
-    <div class="project-list">
+    <div class="projects">
       <div class="card">
         <h3>To‑Do App</h3>
-        <p>App semplice per la gestione delle attività</p>
-        <a href="https://nico25m.github.io/es-surveyform/" class="btn" target="_blank">Guarda</a>
+        <p>Una semplice app per gestire le attività quotidiane.</p>
+        <a href="https://nico25m.github.io/es-surveyform/" target="_blank">Guarda il progetto</a>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>© 2025 nico25m – Tutti i diritti riservati</p>
-  </footer>
+  <section id="contatti">
+    <h2>Contatti</h2>
+    <p>Email: <a href="mailto:nico25m@email.com">nico25m@email.com</a></p>
+    <p>GitHub: <a href="https://github.com/nico25m" target="_blank">github.com/nico25m</a></p>
+  </section>
 
-  <script src="script.js"></script>
+  <footer>
+    <p>© 2025 nico25m - Tutti i diritti riservati</p>
+  </footer>
 </body>
 </html>
