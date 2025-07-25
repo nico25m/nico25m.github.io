@@ -9,8 +9,14 @@ async function fetchMeteo() {
 
     const temp = data.main.temp;
     const descrizione = data.weather[0].description;
+    const icon = data.weather[0].icon;
+    const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
 
-    document.getElementById('temperatura').textContent = `A ${city} ci sono ${temp}°C con ${descrizione}.`;
+    document.getElementById('temperatura').innerHTML = `
+      A ${city} ci sono ${temp}°C con ${descrizione}.
+      <br/>
+      <img src="${iconUrl}" alt="${descrizione}" />
+    `;
   } catch (error) {
     document.getElementById('temperatura').textContent = 'Impossibile caricare il meteo.';
     console.error(error);
