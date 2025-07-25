@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(() => {
+  setTimeout(() => {  
     const loader = document.getElementById("loader");
     const content = document.getElementById("main-content");
 
