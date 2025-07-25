@@ -1,49 +1,43 @@
 <!DOCTYPE html>
-<html lang="it"> 
+<html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio - nico25m</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+  <title>Portfolio – nico25m</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>Ciao, sono <span>nico25m</span></h1>
+      <p>Sviluppatore Web Junior</p>
+      <a href="#progetti" class="cta">I miei progetti</a>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <h2>Chi sono</h2>
+    <p>Appassionato di HTML, CSS, JavaScript e React.</p>
+  </section>
   
-  <div id="loader" class="spinner-loader">
-    <div class="spinner"></div>
-  </div>
-
-  <div id="main-content" class="hidden fade-in">
-    <header>
-      <div class="container">
-        <h1>Ciao, sono <span class="highlight">nico25m</span></h1>
-        <p>Sviluppatore Web Junior</p>
-        <a href="#progetti" class="btn">Guarda i miei progetti</a>
+  <section id="progetti" class="section projects">
+    <h2>I miei progetti</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>To‑Do App</h3>
+        <p>Gestione simple tasks.</p>
+        <a href="..." target="_blank" class="btn">Guarda</a>
       </div>
-    </header>
+      <!-- altre card -->
+    </div>
+  </section>
 
-    <section id="about">
-      <h2>Chi sono</h2>
-      <p>
-        Sono uno sviluppatore web junior appassionato di HTML, CSS e JavaScript.
-        Amo creare siti moderni e semplici, e sto ampliando le mie competenze con React.
-      </p>
-    </section>
+  <footer class="section footer">
+    © 2025 – nico25m
+  </footer>
 
-    <section id="progetti">
-      <h2>I miei progetti</h2>
-      <div class="projects">
-        <div class="card">
-          <h3>To-Do App</h3>
-          <p>Una semplice app per gestire le attività.</p>
-          <a href="https://nico25m.github.io/es-surveyform/" target="_blank">Guarda Progetto</a>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      © 2025 - nico25m
-    </footer>
-  </div>
-<script src="loader.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
