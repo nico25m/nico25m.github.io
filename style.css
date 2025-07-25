@@ -78,8 +78,8 @@ footer {
 }
 
 .spinner {
-  border: 8px solid #333;
-  border-top: 8px solid #ffb400;
+  border: 8px solid white;
+  border-top: 8px solid red;
   border-radius: 50%;
   width: 80px;
   height: 80px;
