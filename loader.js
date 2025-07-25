@@ -9,3 +9,4 @@ window.addEventListener('load', function () {
     }
   }, 500); // attesa breve per una transizione fluida
 });
+                        
