@@ -3,7 +3,7 @@
 body { font-family: 'Segoe UI', sans-serif; color:#fff; background:#0a0a0f; }
 
 /* Hero full-screen */
-.hero {
+.hero { 
   background: url('images/hero-bg.jpg') center/cover no-repeat;
   height:100vh; position:relative;
 }
