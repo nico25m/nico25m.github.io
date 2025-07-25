@@ -70,7 +70,7 @@ footer {
 .spinner-loader {
   position: fixed;
   inset: 0;
-  background: white;
+  background: #111;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,8 +78,8 @@ footer {
 }
 
 .spinner {
-  border: 8px solid white;
-  border-top: 8px solid red;
+  border: 8px solid #fff;
+  border-top: 8px solid #ff0000;
   border-radius: 50%;
   width: 80px;
   height: 80px;
