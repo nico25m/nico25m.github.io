@@ -7,6 +7,6 @@ window.addEventListener('load', function () {
       loader.style.display = "none";
       content.classList.remove("hidden");
     }
-  }, 500); // attesa breve per una transizione fluida
+  }, 2500); // attesa breve per una transizione fluida
 });
                         
