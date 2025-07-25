@@ -1,5 +1,5 @@
-const apiKey = 'ae700b609b8848b0360papà334b69f0cf';
-const city = 'Milan';  
+const apiKey = 'ae700b609b8848b0360dad334b69f0cf';
+const city = 'Rome'; // Puoi cambiare città
 
 async function fetchMeteo() {
   try {
@@ -17,5 +17,4 @@ async function fetchMeteo() {
   }
 }
 
-// Chiamare la funzione al caricamento della pagina
 fetchMeteo();
