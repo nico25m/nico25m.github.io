@@ -7,8 +7,22 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- HERO -->
+  <header>
+    <div class="logo">nico25m</div>
+    <nav id="nav">
+      <ul>
+        <li><a href="#about">Chi sono</a></li>
+        <li><a href="#progetti">Progetti</a></li>
+      </ul>
+    </nav>
+    <div id="menu-toggle">&#9776;</div>
+  </header>
+
   <section class="hero">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="video/hero-video.mp4" type="video/mp4" />
+      Il tuo browser non supporta il video.
+    </video>
     <div class="overlay">
       <h1>Ciao, sono <span>nico25m</span></h1>
       <p>Sviluppatore Web Junior</p>
@@ -16,14 +30,12 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section about" id="about">
+  <section class="section about" id="about" data-parallax>
     <h2>Chi sono</h2>
     <p>Sono uno sviluppatore appassionato di HTML, CSS, JavaScript e React.</p>
   </section>
 
-  <!-- PROGETTI -->
-  <section class="section projects" id="progetti">
+  <section class="section projects" id="progetti" data-parallax>
     <h2>I miei progetti</h2>
     <div class="project-list">
       <div class="card">
@@ -34,7 +46,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <p>© 2025 nico25m – Tutti i diritti riservati</p>
   </footer>
