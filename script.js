@@ -1,22 +1,21 @@
-const apiKey = '8ytNvULlYCSE0zwF';
-const lat = 45.4642;  // Milano
-const lon = 9.19;
+const apiKey = 'ae700b609b8848b0360papà334b69f0cf';
+const city = 'Milan';  
 
-async function fetchMeteoMeteoblue() {
+async function fetchMeteo() {
   try {
-    const url = `https://my.meteoblue.com/packages/simple-marine/v1?lat=${lat}&lon=${lon}&apikey=${apiKey}`;
-    const response = await fetch(url);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=it`);
     if (!response.ok) throw new Error('Errore nel recupero dati');
     const data = await response.json();
 
-    // esempio: stampa temperatura (adatta in base alla risposta)
-    console.log(data);
+    const temp = data.main.temp;
+    const descrizione = data.weather[0].description;
 
-    document.getElementById('temperatura').textContent = `Temperatura: ${data.temperature} °C`;
+    document.getElementById('temperatura').textContent = `A ${city} ci sono ${temp}°C con ${descrizione}.`;
   } catch (error) {
     document.getElementById('temperatura').textContent = 'Impossibile caricare il meteo.';
     console.error(error);
   }
 }
 
-fetchMeteoMeteoblue();
+// Chiamare la funzione al caricamento della pagina
+fetchMeteo();
