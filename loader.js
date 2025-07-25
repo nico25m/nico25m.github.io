@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("main-content").classList.remove("hidden");
-  }, 2000); 
+    const loader = document.getElementById("loader");
+    const content = document.getElementById("main-content");
+
+    loader.style.display = "none";
+    content.classList.remove("hidden");
+  }, 2500); // 2.5s di caricamento
 });
