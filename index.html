@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="it">
- 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - nico25m</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
- <!-- 3D LOADER -->
-  <div id="loader" class="loader-3d">
+
+  <!-- LOADER 3D -->
+  <div id="loader" class="loader">
     <div class="cube">
       <div class="face front">nico25m</div>
       <div class="face back">web dev</div>
     </div>
   </div>
 
-  <!-- CONTENUTO DEL SITO -->
-  <div id="main-content" style="display: none;">
+  <!-- CONTENUTO PRINCIPALE -->
+  <div id="main-content" class="hidden">
     <header>
       <div class="container">
         <h1>Ciao, sono <span class="highlight">nico25m</span></h1>
@@ -44,7 +50,7 @@
     </footer>
   </div>
 
-  <link rel="stylesheet" href="style.css" >
+  <!-- JS ESTERNO -->
   <script src="loader.js"></script>
 </body>
 </html>
