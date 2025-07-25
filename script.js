@@ -1,5 +1,5 @@
 const apiKey = 'ae700b609b8848b0360dad334b69f0cf';
-const city = 'Rome';
+const city = 'Milan';
 
 async function fetchMeteo() {
   try {
