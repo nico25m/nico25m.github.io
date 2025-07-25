@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - nico25m</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+ 
 <body>
-  <header>
-    <div class="container">
-      <h1>Ciao, sono <span class="highlight">nico25m</span></h1>
-      <p>Sviluppatore Web Junior</p>
-      <a href="index.html" class="btn">Guarda i miei progetti</a>
-    </div>
-  </header>
+  <!-- LOADER -->
+  <div id="loader" class="loader">
+    <h1 class="loader-text">nico25m</h1>
+  </div>
 
-  <section id="about">
-    <h2>Chi sono</h2>
-    <p>
-      Sono uno sviluppatore web junior appassionato di HTML, CSS e JavaScript.
-      Amo creare siti moderni e semplici, e sto ampliando le mie competenze con React.
-    </p>
-  </section>
-
-  <section id="progetti">
-    <h2>I miei progetti</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>To-Do App</h3>
-        <p>Una semplice app per gestire le attività.</p>
-        <a href="https://nico25m.github.io/es-surveyform/" target="_blank">Guarda Progetto</a>
+  <!-- CONTENUTO DEL SITO -->
+  <div id="main-content" style="display: none;">
+    <header>
+      <div class="container">
+        <h1>Ciao, sono <span class="highlight">nico25m</span></h1>
+        <p>Sviluppatore Web Junior</p>
+        <a href="#progetti" class="btn">Guarda i miei progetti</a>
       </div>
-      <div class="card">
-        <h3
+    </header>
+
+    <section id="about">
+      <h2>Chi sono</h2>
+      <p>
+        Sono uno sviluppatore web junior appassionato di HTML, CSS e JavaScript.
+        Amo creare siti moderni e semplici, e sto ampliando le mie competenze con React.
+      </p>
+    </section>
+
+    <section id="progetti">
+      <h2>I miei progetti</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>To-Do App</h3>
+          <p>Una semplice app per gestire le attività.</p>
+          <a href="https://nico25m.github.io/es-surveyform/" target="_blank">Guarda Progetto</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 - nico25m
+    </footer>
+  </div>
+
+  <!-- SCRIPT ESTERNO -->
+  <script src="loader.js"></script>
+</body>
+</html>
