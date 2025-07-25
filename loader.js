@@ -5,5 +5,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     loader.style.display = "none";
     content.classList.remove("hidden");
-  }, 2500); // 2.5s di caricamento
-});
+  }, 2500);
