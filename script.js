@@ -1,13 +1,17 @@
-// Fade-in di sezione scroll
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('.section');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('in-view');
-      }
-    });
-  }, { threshold: 0.15 });
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".section");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
 
-  sections.forEach(s => observer.observe(s));
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
 });
