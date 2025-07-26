@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>nico25m Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -43,13 +55,9 @@
             <p id="temperatura">Caricamento...</p>
           </div>
         </div>
-        <div class="card">
-          <div id="luogo">
-            <h3>Dove Trovarmi</h3>
-            <p id="posizione">Caricamento...</p>
-          </div>
-        </div>
       </div>
+        <h2>Mappa gratuita su GitHub</h2>
+        <div id="map"></div>
   </section>
 
   <section id="contatti">
@@ -61,6 +69,7 @@
   <footer>
     <p>© 2025 nico25m - Tutti i diritti riservati</p>
   </footer>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
