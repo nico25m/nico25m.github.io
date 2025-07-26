@@ -1,3 +1,5 @@
+
+//METEO
 const apiKey = 'ae700b609b8848b0360dad334b69f0cf';
 const city = 'Milano';
 
@@ -25,6 +27,8 @@ async function fetchMeteo() {
 
 fetchMeteo();
 
+
+//MAPPA
  const map = L.map('map').setView([45.4642, 9.1900], 13);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -33,5 +37,5 @@ fetchMeteo();
 
     L.marker([45.4642, 9.1900])
       .addTo(map)
-      .bindPopup('Ciao da Milano!')
+      .bindPopup('Milano')
       .openPopup();

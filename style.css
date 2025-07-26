@@ -1,4 +1,3 @@
-/* Tema scuro per il portfolio di nico25m */
 
 body { 
   margin: 0;
@@ -61,6 +60,13 @@ section {
   box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
+.card:hover {
+  text-decoration: none;
+  box-shadow: 0.2px 0.2px 5px #ff4c4c;
+  transition: 0.2s;
+}
+
+
 .card h3 {
   margin-top: 0;
   color: #ff4c4c;
@@ -72,9 +78,12 @@ section {
   color: #ff4c4c;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.6s;
 }
 
 .card a:hover {
+  font-size: 1.1em;
+  transition: 0.4s;
   text-decoration: underline;
 }
 
@@ -111,7 +120,18 @@ footer {
   text-decoration: underline;
 }
 
- #map {
-      height: 400px;
-      width: 100%;
-    }
+#map {
+  height: 400px;
+  width: 95%;
+  display: inline-block;
+}
+
+#nico25m{
+  color: #ff4c4c;
+  text-decoration: none;
+  transition: 0.6s;
+}
+#nico25m:hover {
+  font-size: 1.1em;
+  transition: 0.5s;
+}
