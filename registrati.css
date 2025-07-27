@@ -1,0 +1,98 @@
+/*SURVEYFORM*/
+body { 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ff4c4c;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 20px;
+}
+
+.survey-form {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 25px;
+  width: 250px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.survey-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #eee;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+#submit {
+  background-color: #D30000;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#submit:hover {
+  background-color: #ff4c4c;
+}
+
+.back{
+  position: absolute;
+  left: 0.6%;
+  top: 0.8%;
+  background-color: #D30000;
+  color: #1e1e1e;
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight:500;
+  font-size: 0.9em;
+  transition: 0.2s;
+}
+
+.back:hover{
+  box-shadow: 0.5px 0.5px 5px #ff4c4c;
+  transition: 0.2s;
+}
+
+#dimenticata,#login{
+    text-decoration: none;
+    color: #ff4c4c;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+  .survey-form {
+    width: 400px;
+  }
+}
