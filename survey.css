@@ -86,3 +86,9 @@ input::placeholder {
 }
 
 /**/
+
+@media (min-width: 600px) {
+  .survey-form {
+    width: 400px;
+  }
+}
