@@ -55,4 +55,9 @@ fetchMeteo();
     sidebar.classList.remove('show');
   }
 });
-  
+
+document.querySelectorAll('#sidebar a').forEach(link => {
+  link.addEventListener('click', () => {
+    sidebar.classList.remove('show');
+  });
+});
