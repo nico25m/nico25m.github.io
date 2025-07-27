@@ -48,6 +48,7 @@ fetchMeteo();
   toggle.addEventListener('click', () => {
     sidebar.classList.toggle('show');
   });
+
   document.addEventListener('click', (event) => {
   const isClickInsideSidebar = sidebar.contains(event.target);
   const isClickOnToggle = toggle.contains(event.target);
@@ -55,7 +56,7 @@ fetchMeteo();
     sidebar.classList.remove('show');
   }
 });
-
+  
 document.querySelectorAll('#sidebar a').forEach(link => {
   link.addEventListener('click', () => {
     sidebar.classList.remove('show');
