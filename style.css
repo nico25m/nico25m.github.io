@@ -124,6 +124,8 @@ footer {
   height: 400px;
   width: 95%;
   display: inline-block;
+  position: relative;
+  z-index: 1; 
 }
 
 #nico25m{
@@ -134,4 +136,75 @@ footer {
 #nico25m:hover {
   font-size: 1.1em;
   transition: 0.5s;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 220px;
+  background-color: #1e1e1e;
+  padding-top: 60px;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  z-index: 1000;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #444;
+}
+
+.sidebar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  color: #ff4c4c;
+  transition: 0.2s;
+}
+
+.sidebar.show {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+  color: #ff4c4c;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.accedi{
+  position: absolute;
+  right: 0.6%;
+  top: 0.8%;
+  background-color: #D30000;
+  color: #1e1e1e;
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight:500;
+  font-size: 0.9em;
+  transition: 0.2s;
+}
+
+.accedi:hover{
+  box-shadow: 0.5px 0.5px 5px #ff4c4c;
+  transition: 0.2s;
 }
