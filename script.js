@@ -62,3 +62,38 @@ document.querySelectorAll('#sidebar a').forEach(link => {
     sidebar.classList.remove('show');
   });
 });
+
+function login(email, password) {
+  fetch('http://nico25m.page.gd/api_login.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, password })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if(data.success) {
+      alert("Benvenuto " + data.name);
+      // Qui puoi salvare token/sessione lato client
+    } else {
+      alert(data.error);
+    }
+  })
+  .catch(() => alert("Errore di rete"));
+}
+
+function passwordDimenticata(email) {
+  fetch('http://nico25m.page.gd/api_password_dimenticata.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if(data.success) {
+      alert(data.success);
+    } else {
+      alert(data.error);
+    }
+  })
+  .catch(() => alert("Errore di rete"));
+}
