@@ -1,7 +1,7 @@
 
 body { 
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   background-color: #121212;
   color: #eee;
   line-height: 1.6;
@@ -144,7 +144,8 @@ footer {
   left: 0;
   height: 100%;
   width: 220px;
-  background-color: #1e1e1e;
+  background-color: #1e1e1e ;
+  opacity: 0.85;
   padding-top: 60px;
   transform: translateX(-100%);
   transition: transform 0.4s ease;
