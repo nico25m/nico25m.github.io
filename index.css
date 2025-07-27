@@ -189,13 +189,10 @@ footer {
 }
 
 .accedi{
-  position: absolute;
-  left: 7%;
-  top: 18.5%;
   background-color: #D30000;
   color: #1e1e1e;
-  width: 73px;
-  height: 33px;
+  width: 75px;
+  height: 36px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
