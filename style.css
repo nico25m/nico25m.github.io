@@ -1,210 +1,80 @@
+/* Import Google Font simile a quello del sito originale */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-body { 
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #eee;
-  line-height: 1.6;
-}
-
-header {
-  background-color: #1e1e1e;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.highlight {
-  color: #ff4c4c;
-}
-
-nav ul {
-  list-style: none;
   padding: 0;
-  margin-top: 20px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #e9eff5);
+  color: #333;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  align-items: center;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
+.form-container {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  margin: 2rem auto;
   text-align: center;
 }
 
-.projects {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+h2 {
+  margin-bottom: 1.5rem;
+  color: #1a73e8;
 }
 
-.card {
-  background-color: #1e1e1e;
-  border: 1px solid #444;
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  font-size: 1rem;
+  transition: border 0.3s;
 }
 
-.card:hover {
-  text-decoration: none;
-  box-shadow: 0.2px 0.2px 5px #ff4c4c;
-  transition: 0.2s;
+form input:focus {
+  border-color: #1a73e8;
+  outline: none;
 }
 
-
-.card h3 {
-  margin-top: 0;
-  color: #ff4c4c;
-}
-
-.card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #ff4c4c;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.6s;
-}
-
-.card a:hover {
-  font-size: 1.1em;
-  transition: 0.4s;
-  text-decoration: underline;
-}
-
-footer {
-  background-color: #1e1e1e;
+button {
+  background-color: #1a73e8;
   color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  padding: 0.75rem;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-#contatti {
-  background-color: #1a1a1a;
-  padding: 40px 20px;
-  text-align: center;
+button:hover {
+  background-color: #0f5dd3;
 }
 
-#contatti h2 {
-  color: #ff4c4c;
-}
-
-#contatti p {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-#contatti a {
-  color: #ff4c4c;
+a {
+  color: #1a73e8;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 0.9rem;
 }
 
-#contatti a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-#map {
-  height: 400px;
-  width: 95%;
-  display: inline-block;
-  position: relative;
-  z-index: 1; 
-}
-
-#nico25m{
-  color: #ff4c4c;
-  text-decoration: none;
-  transition: 0.6s;
-}
-#nico25m:hover {
-  font-size: 1.1em;
-  transition: 0.5s;
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 220px;
-  background-color: #1e1e1e;
-  padding-top: 60px;
-  transform: translateX(-100%);
-  transition: transform 0.4s ease;
-  z-index: 1000;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar ul li {
-  padding: 15px 20px;
-  border-bottom: 1px solid #444;
-}
-
-.sidebar ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  display: block;
-}
-
-.sidebar ul li a:hover {
-  color: #ff4c4c;
-  transition: 0.2s;
-}
-
-.sidebar.show {
-  transform: translateX(0);
-}
-
-.menu-toggle {
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  font-size: 28px;
-  color: #ff4c4c;
-  cursor: pointer;
-  z-index: 1100;
-}
-
-.accedi{
-  position: absolute;
-  right: 0.6%;
-  top: 0.8%;
-  background-color: #D30000;
-  color: #1e1e1e;
-  width: 70px;
-  height: 30px;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  font-weight:500;
-  font-size: 0.9em;
-  transition: 0.2s;
-}
-
-.accedi:hover{
-  box-shadow: 0.5px 0.5px 5px #ff4c4c;
-  transition: 0.2s;
+p {
+  margin-top: 1rem;
 }
