@@ -2,13 +2,13 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
-  background-color: #111;
+  background-color: #121212;
 }
 
 #gameArea {
   width: 600px;
   height: 400px;
-  background-color: #e1e1;
+  background-color: #1e1e1e;
   border: 2px solid #ccc;
   margin: 0 auto;
   position: relative;
