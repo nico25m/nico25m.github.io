@@ -60,7 +60,7 @@ document.querySelectorAll('#sidebar a').forEach(link => {
   });
 });
 
-// TEMA SCURO/CHIARO
+
 const themeButton = document.getElementById('theme-toggle');
 
 function isDarkMode() {
