@@ -5,6 +5,10 @@ body {
   background-color: #121212;
 }
 
+h1{
+  color: #ff4c4c;
+}
+
 #gameArea {
   width: 600px;
   height: 400px;
