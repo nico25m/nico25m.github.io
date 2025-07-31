@@ -1,73 +1,111 @@
-/*SURVEYFORM*/
-body { 
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #ff4c4c;
-  line-height: 1.6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
+:root {
+      --bg: #ffffff;
+      --text: #000000;
+      --card-bg: #f1f1f1;
+      --input-bg: #ffffff;
+      --input-text: #000000;
+      --highlight: #ff4c4c;
+      --btn-bg: #ff4c4c;
+      --btn-text: #ffffff;
+    }
 
-.container {
-  padding: 20px;
-}
+    .dark {
+      --bg: #121212;
+      --text: #eeeeee;
+      --card-bg: #1e1e1e;
+      --input-bg: #2a2a2a;
+      --input-text: #eeeeee;
+      --highlight: #ff4c4c;
+      --btn-bg: #D30000;
+      --btn-text: #ffffff;
+    }
 
-.survey-form {
-  background-color: #1e1e1e;
-  border: 1px solid #444;
-  border-radius: 6px;
-  padding: 25px;
-  width: 250px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--highlight);
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      transition: background-color 0.3s, color 0.3s;
+      flex-direction: column;
+      padding: 20px;
+    }
 
-.survey-form h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
+    .container {
+      padding: 0;
+      width: 100%;
+      max-width: 400px;
+    }
 
-label {
-  font-size: 0.9rem;
-}
+    .survey-form {
+      background-color: var(--card-bg);
+      border: 1px solid #444;
+      border-radius: 6px;
+      padding: 25px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  padding: 15px;
-  border: 1px solid #444;
-  border-radius: 6px;
-  background-color: #2a2a2a;
-  color: #eee;
-}
+    .survey-form h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: var(--highlight);
+    }
 
-input::placeholder {
-  color: #aaa;
-}
+    label {
+      font-size: 0.9rem;
+      color: var(--highlight);
+    }
 
-#submit {
-  background-color: #D30000;
-  color: #fff;
-  border: none;
-  padding: 15px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 15px;
+      border: 1px solid #444;
+      border-radius: 6px;
+      background-color: var(--input-bg);
+      color: var(--input-text);
+      font-size: 1rem;
+    }
 
-#submit:hover {
-  background-color: #ff4c4c;
-}
+    input::placeholder {
+      color: #aaa;
+    }
 
-/**/
+    #submit {
+      background-color: var(--btn-bg);
+      color: var(--btn-text);
+      border: none;
+      padding: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
 
-@media (min-width: 600px) {
-  .survey-form {
-    width: 400px;
-  }
-}
+    #submit:hover {
+      background-color: var(--highlight);
+    }
+
+    /* Bottone toggle tema */
+    #theme-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 8px 14px;
+      font-weight: bold;
+      border-radius: 6px;
+      background-color: var(--highlight);
+      color: var(--bg);
+      border: none;
+      cursor: pointer;
+      z-index: 999;
+      transition: background-color 0.3s;
+    }
