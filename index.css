@@ -1,21 +1,41 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --card-bg: #f1f1f1;
+  --header-bg: #f8f8f8;
+  --highlight: #ff4c4c;
+  --btn-bg: #007bff;
+  --btn-text: #ffffff;
+}
 
-body { 
+.dark {
+  --bg: #121212;
+  --text: #eeeeee;
+  --card-bg: #1e1e1e;
+  --header-bg: #1e1e1e;
+  --highlight: #ff4c4c;
+  --btn-bg: #444;
+  --btn-text: #ffffff;
+}
+
+body {
   margin: 0;
   font-family: Arial;
-  background-color: #121212;
-  color: #eee;
+  background-color: var(--bg);
+  color: var(--text);
   line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header {
-  background-color: #1e1e1e;
-  color: #fff;
+  background-color: var(--header-bg);
+  color: var(--text);
   padding: 40px 20px;
   text-align: center;
 }
 
 .highlight {
-  color: #ff4c4c;
+  color: var(--highlight);
 }
 
 nav ul {
@@ -28,7 +48,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--text);
   text-decoration: none;
   font-weight: bold;
 }
@@ -52,7 +72,7 @@ section {
 }
 
 .card {
-  background-color: #1e1e1e;
+  background-color: var(--card-bg);
   border: 1px solid #444;
   border-radius: 8px;
   padding: 20px;
@@ -61,21 +81,19 @@ section {
 }
 
 .card:hover {
-  text-decoration: none;
-  box-shadow: 0.2px 0.2px 5px #ff4c4c;
+  box-shadow: 0.2px 0.2px 5px var(--highlight);
   transition: 0.2s;
 }
 
-
 .card h3 {
   margin-top: 0;
-  color: #ff4c4c;
+  color: var(--highlight);
 }
 
 .card a {
   display: inline-block;
   margin-top: 10px;
-  color: #ff4c4c;
+  color: var(--highlight);
   text-decoration: none;
   font-weight: bold;
   transition: 0.6s;
@@ -88,21 +106,21 @@ section {
 }
 
 footer {
-  background-color: #1e1e1e;
-  color: white;
+  background-color: var(--header-bg);
+  color: var(--text);
   text-align: center;
   padding: 15px;
   margin-top: 40px;
 }
 
 #contatti {
-  background-color: #1a1a1a;
+  background-color: var(--card-bg);
   padding: 40px 20px;
   text-align: center;
 }
 
 #contatti h2 {
-  color: #ff4c4c;
+  color: var(--highlight);
 }
 
 #contatti p {
@@ -111,7 +129,7 @@ footer {
 }
 
 #contatti a {
-  color: #ff4c4c;
+  color: var(--highlight);
   text-decoration: none;
   font-weight: bold;
 }
@@ -125,14 +143,15 @@ footer {
   width: 95%;
   display: inline-block;
   position: relative;
-  z-index: 1; 
+  z-index: 1;
 }
 
-#nico25m{
-  color: #ff4c4c;
+#nico25m {
+  color: var(--highlight);
   text-decoration: none;
   transition: 0.6s;
 }
+
 #nico25m:hover {
   font-size: 1.1em;
   transition: 0.5s;
@@ -144,7 +163,7 @@ footer {
   left: 0;
   height: 100%;
   width: 220px;
-  background-color: #1e1e1e ;
+  background-color: var(--header-bg);
   opacity: 0.85;
   padding-top: 60px;
   transform: translateX(-100%);
@@ -164,14 +183,14 @@ footer {
 }
 
 .sidebar ul li a {
-  color: #ffffff;
+  color: var(--text);
   text-decoration: none;
   font-weight: bold;
   display: block;
 }
 
 .sidebar ul li a:hover {
-  color: #ff4c4c;
+  color: var(--highlight);
   transition: 0.2s;
 }
 
@@ -184,25 +203,39 @@ footer {
   top: 8px;
   left: 15px;
   font-size: 32px;
-  color: #ff4c4c;
+  color: var(--highlight);
   cursor: pointer;
   z-index: 1100;
 }
 
-.accedi{
+.accedi {
   background-color: #D30000;
-  color: #1e1e1e;
+  color: var(--header-bg);
   width: 75px;
   height: 36px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-weight:525;
+  font-weight: 525;
   font-size: 1.0em;
   transition: 0.2s;
 }
 
-.accedi:hover{
-  box-shadow: 0.5px 0.5px 5px #ff4c4c;
+.accedi:hover {
+  box-shadow: 0.5px 0.5px 5px var(--highlight);
   transition: 0.2s;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--highlight);
+  color: var(--bg);
+  border: none;
+  z-index: 1500;
 }
