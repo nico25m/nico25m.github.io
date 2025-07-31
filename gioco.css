@@ -1,29 +1,118 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
-  background-color: #121212;
-}
+:root {
+      --bg: #ffffff;
+      --text: #000000;
+      --highlight: #ff4c4c;
+      --card-bg: #f1f1f1;
+      --link-color: #ff4c4c;
+      --map-bg: #ddd;
+    }
 
-h1, p{
-  color: #ff4c4c;
-}
+    .dark {
+      --bg: #121212;
+      --text: #eee;
+      --highlight: #ff4c4c;
+      --card-bg: #1e1e1e;
+      --link-color: #ff4c4c;
+      --map-bg: #333;
+    }
 
-#gameArea {
-  width: 600px;
-  height: 400px;
-  background-color: #1e1e1e;
-  border: 2px solid #ccc;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-}
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: var(--bg);
+      color: var(--highlight);
+      margin: 0;
+      transition: background-color 0.3s, color 0.3s;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.circle {
-  width: 50px;
-  height: 50px;
-  background-color: red;
-  border-radius: 50%;
-  position: absolute;
-  cursor: pointer;
-}
+    h1, p, h2, h3 {
+      color: var(--highlight);
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #gameArea {
+      width: 600px;
+      height: 400px;
+      background-color: var(--card-bg);
+      border: 2px solid #ccc;
+      margin: 20px auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .circle {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      cursor: pointer;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid #444;
+      border-radius: 8px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      color: var(--highlight);
+    }
+
+    #map {
+      height: 400px;
+      width: 95%;
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: var(--map-bg);
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 15px;
+      background-color: var(--card-bg);
+      color: var(--highlight);
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* Bottone toggle tema */
+    #theme-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 8px 14px;
+      font-weight: bold;
+      border-radius: 6px;
+      background-color: var(--highlight);
+      color: var(--bg);
+      border: none;
+      cursor: pointer;
+      z-index: 999;
+      transition: background-color 0.3s;
+    }
